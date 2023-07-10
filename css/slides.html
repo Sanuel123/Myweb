@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slides</title>
+</head>
+<body>
+ 
+    <h1>Simple slides </h1>
+    <section>
+    <img src="image/bulb.jpg" alt="">
+    </section>
+
+</body>
+<style>
+img{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+}
+.pic2{
+    display: none;
+    opacity: 0;
+}
+
+</style>
+
+<script>
+    let pic1 = document.querySelector(".pic1");
+    let pic2 = document.querySelector(".pic2")
+    counter = 0;
+
+
+    setInterval(()=>{
+        counter++;
+        if(counter >= 5){
+         pic2.style.display = "block";
+         pic1.style.display = "none";
+        }
+        if(counter >= 10){
+        pic2.style.display = "none";
+        pic1.style.display = "block";
+        }
+        if(counter === 15){
+            counter= 0;
+        }
+
+    },100);
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
